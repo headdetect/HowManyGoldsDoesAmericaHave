@@ -1,0 +1,126 @@
+body, html {
+    background: #f3f7f8;
+    padding: 0;
+    margin: 0;
+
+    width: 600px;
+    height: 500px;
+
+    overflow: hidden;
+}
+
+#close {
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    
+    -webkit-app-region: no-drag;
+
+    &:hover {
+        background: red;
+    }
+}
+
+.bar {
+    height: 40px;
+    width: 100%;
+    color: #eee;
+    background: #0e365a;
+
+    z-index: 1000;
+    position: relative;
+
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    
+    div {
+        position: relative;
+        display: inline-block;
+        width: 98/3%;
+        height: 5px;
+        margin:0;
+        padding: 0;
+    }
+}
+
+
+.murica {
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: -40px;
+
+    z-index: 0;
+    position: relative;
+}
+
+.medal
+{   
+    bottom: 10px;
+    font-size: 10em;
+    text-align: center;
+
+    span {
+        font-size: .3em;
+        vertical-align: middle;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        border: 3px solid black;
+        border-radius: 50%;
+        content: '';
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    &::after {
+        width: 130px;
+        height: 130px;
+        border-width: 7px;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    }
+
+    &::before,
+    &::after {
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+}
+
+.medal-gold 
+{
+    color: #F7D439;
+    &::before,
+    &::after {
+        border-color: #F7D439;
+    }
+}
+
+.medal-silver 
+{
+    color: #B8B8B8;
+    &::before,
+    &::after {
+        border-color: #B8B8B8;
+    }
+}
+
+.medal-bronze 
+{
+    color: #B57D14;
+    &::before,
+    &::after {
+        border-color: #B57D14;
+    }
+}
