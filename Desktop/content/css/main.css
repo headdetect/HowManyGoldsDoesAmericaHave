@@ -9,13 +9,17 @@ html {
   overflow: hidden;
 }
 #close {
+  position: absolute;
+  right: 0;
+  top: 0;
   height: 100%;
   width: 40px;
   text-align: center;
   -webkit-app-region: no-drag;
 }
 #close:hover {
-  background: red;
+  background: #e23026;
+  cursor: pointer;
 }
 .bar {
   height: 40px;
@@ -41,6 +45,15 @@ html {
   height: 5px;
   margin: 0;
   padding: 0;
+}
+.footer .red {
+  background: #e23026;
+}
+.footer .white {
+  background: white;
+}
+.footer .blue {
+  background: #0e365a;
 }
 .murica {
   text-align: center;

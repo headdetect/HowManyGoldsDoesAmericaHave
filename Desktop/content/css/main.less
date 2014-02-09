@@ -10,6 +10,9 @@ body, html {
 }
 
 #close {
+    position: absolute;
+    right: 0;
+    top: 0;
     height: 100%;
     width: 40px;
     text-align: center;
@@ -17,7 +20,8 @@ body, html {
     -webkit-app-region: no-drag;
 
     &:hover {
-        background: red;
+        background: #e23026;
+        cursor: pointer;
     }
 }
 
@@ -48,6 +52,18 @@ body, html {
         height: 5px;
         margin:0;
         padding: 0;
+    }
+    
+    .red {
+        background: #e23026;
+    }
+    
+    .white  {
+        background: white;
+    }
+    
+    .blue {
+        background: #0e365a;
     }
 }
 
